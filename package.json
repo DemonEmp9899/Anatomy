@@ -1,0 +1,17 @@
+{
+  "name": "barebones-anatomy",
+  "version": "1.0.0",
+  "description": "BareBones — General Anatomy made easy (static site)",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && python3 -m http.server 8080 -d dist",
+    "dev": "node build.mjs && (python3 -m http.server 8080 -d dist & node --watch-path=general-anatomy-site.md --watch-path=src --watch-path=build.mjs build.mjs)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "marked": "^15.0.12"
+  }
+}
